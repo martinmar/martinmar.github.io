@@ -6,23 +6,66 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Schöne Farbverläufe */
-    height: 100vh;
+    background: linear-gradient(135deg, #1e2aaa, #2351db); /* Schöner Farbverlauf */
+    min-height: 100vh; /* "min-height" für flexiblen Inhalt */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Inhalt am Anfang ausrichten */
+    padding: 20px; /* Padding für kleinere Bildschirme */
 }
 
 .container {
-    text-align: center;
+    max-width: 800px; /* Maximalbreite für Desktop-Bildschirme */
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.2); /* Transparenter Hintergrund */
-    padding: 50px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 20px; /* Abstand vom oberen Bildschirmrand */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Abstand zum Text */
+    text-align: center;
+}
+
+.content h3 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    line-height: 1.6; /* Bessere Lesbarkeit */
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Anpassungen für kleinere Bildschirme */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .content h3 {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .content h3 {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
 }
