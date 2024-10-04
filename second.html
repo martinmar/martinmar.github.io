@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Überweisungsbestätigung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .confirmation-box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+        }
+        .confirmation-box h1 {
+            color: #28a745;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .confirmation-box p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .amount {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .receiver {
+            font-size: 18px;
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="confirmation-box">
+        <h1>Überweisung erfolgreich!</h1>
+        <p>Sie haben erfolgreich</p>
+        <p class="amount">100,00 €</p>
+        <p>an</p>
+        <p class="receiver">Anika und Martin</p>
+        <p>überwiesen</p>
+        <a href="#" class="button">Zurück zum Dashboard</a>
+    </div>
+
+</body>
+</html>
